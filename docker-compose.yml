@@ -1,0 +1,16 @@
+gogs:
+  build: .
+  links: 
+    - db:db
+  volumes: 
+    - ./data:/data/
+  ports:
+    - "10080:3000"
+db:
+  image: postgres
+  environment:
+    POSTGRESQL_DB: gogs
+    POSTGRESQL_USER: gogs
+    POSTGRESQL_PASS: Jai7iyoe1ahsieTah9oh
+  ports:
+    - "5432:5432"
