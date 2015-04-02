@@ -9,8 +9,8 @@ gogs:
 db:
   image: postgres
   environment:
-    POSTGRESQL_DB: gogs
-    POSTGRESQL_USER: gogs
-    POSTGRESQL_PASS: Jai7iyoe1ahsieTah9oh
+    POSTGRES_DB: gogs
+    POSTGRES_USER: gogs
+    POSTGRES_PASSWORD: Jai7iyoe1ahsieTah9oh
   ports:
     - "5432:5432"
